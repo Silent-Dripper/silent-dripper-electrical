@@ -1,0 +1,196 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP C?
+U 1 1 6024869C
+P 7000 4000
+AR Path="/6024869C" Ref="C?"  Part="1" 
+AR Path="/6023FC94/6024869C" Ref="C4"  Part="1" 
+AR Path="/60256860/6024869C" Ref="C5"  Part="1" 
+F 0 "C4" H 7118 4046 50  0000 L CNN
+F 1 "100uF" H 7118 3955 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.8" H 7038 3850 50  0001 C CNN
+F 3 "http://nichicon-us.com/english/products/pdfs/e-uwj.pdf" H 7000 4000 50  0001 C CNN
+F 4 "493-9777-1-ND" H 7000 4000 50  0001 C CNN "Digi-Key Part Number"
+	1    7000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 602486A2
+P 7000 3850
+AR Path="/602486A2" Ref="#PWR?"  Part="1" 
+AR Path="/6023FC94/602486A2" Ref="#PWR019"  Part="1" 
+AR Path="/60256860/602486A2" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 7000 3700 50  0001 C CNN
+F 1 "+12V" H 7015 4023 50  0000 C CNN
+F 2 "" H 7000 3850 50  0001 C CNN
+F 3 "" H 7000 3850 50  0001 C CNN
+	1    7000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602486A8
+P 7000 4150
+AR Path="/602486A8" Ref="#PWR?"  Part="1" 
+AR Path="/6023FC94/602486A8" Ref="#PWR020"  Part="1" 
+AR Path="/60256860/602486A8" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 7000 3900 50  0001 C CNN
+F 1 "GND" H 7005 3977 50  0000 C CNN
+F 2 "" H 7000 4150 50  0001 C CNN
+F 3 "" H 7000 4150 50  0001 C CNN
+	1    7000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602486AE
+P 6550 4150
+AR Path="/602486AE" Ref="#PWR?"  Part="1" 
+AR Path="/6023FC94/602486AE" Ref="#PWR017"  Part="1" 
+AR Path="/60256860/602486AE" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 6550 3900 50  0001 C CNN
+F 1 "GND" H 6555 3977 50  0000 C CNN
+F 2 "" H 6550 4150 50  0001 C CNN
+F 3 "" H 6550 4150 50  0001 C CNN
+	1    6550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4000 6550 4000
+$Comp
+L power:+5V #PWR?
+U 1 1 602486B5
+P 6550 2650
+AR Path="/602486B5" Ref="#PWR?"  Part="1" 
+AR Path="/6023FC94/602486B5" Ref="#PWR016"  Part="1" 
+AR Path="/60256860/602486B5" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 6550 2500 50  0001 C CNN
+F 1 "+5V" H 6565 2823 50  0000 C CNN
+F 2 "" H 6550 2650 50  0001 C CNN
+F 3 "" H 6550 2650 50  0001 C CNN
+	1    6550 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2700 6550 2700
+Wire Wire Line
+	6550 2700 6550 2650
+$Comp
+L power:+12V #PWR?
+U 1 1 602486BD
+P 6800 2650
+AR Path="/602486BD" Ref="#PWR?"  Part="1" 
+AR Path="/6023FC94/602486BD" Ref="#PWR018"  Part="1" 
+AR Path="/60256860/602486BD" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 6800 2500 50  0001 C CNN
+F 1 "+12V" H 6815 2823 50  0000 C CNN
+F 2 "" H 6800 2650 50  0001 C CNN
+F 3 "" H 6800 2650 50  0001 C CNN
+	1    6800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2800 6800 2800
+Wire Wire Line
+	6800 2800 6800 2650
+$Comp
+L TMC2208_SILENTSTEPSTICK:TMC2208_SILENTSTEPSTICK U?
+U 1 1 602486C9
+P 5800 3300
+AR Path="/602486C9" Ref="U?"  Part="1" 
+AR Path="/6023FC94/602486C9" Ref="U2"  Part="1" 
+AR Path="/60256860/602486C9" Ref="U3"  Part="1" 
+F 0 "U2" H 5800 4167 50  0000 C CNN
+F 1 "TMC2208_SILENTSTEPSTICK" H 5800 4076 50  0000 C CNN
+F 2 "TMC2208_SILENTSTEPSTICK:MODULE_TMC2208_SILENTSTEPSTICK" H 5800 3300 50  0001 L BNN
+F 3 "" H 5800 3300 50  0001 L BNN
+F 4 "N/A" H 5800 3300 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "v11" H 5800 3300 50  0001 L BNN "PARTREV"
+F 6 "Trinamic" H 5800 3300 50  0001 L BNN "MANUFACTURER"
+F 7 "Manufacturer Recommendations" H 5800 3300 50  0001 L BNN "STANDARD"
+	1    5800 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6500 3700
+NoConn ~ 6500 3800
+Wire Wire Line
+	5100 3100 5050 3100
+Wire Wire Line
+	5050 3200 5100 3200
+$Comp
+L Device:R R?
+U 1 1 602486D9
+P 4850 3600
+AR Path="/602486D9" Ref="R?"  Part="1" 
+AR Path="/6023FC94/602486D9" Ref="R1"  Part="1" 
+AR Path="/60256860/602486D9" Ref="R2"  Part="1" 
+F 0 "R1" V 4950 3600 50  0000 C CNN
+F 1 "1k" V 4850 3600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 4780 3600 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rncp.pdf" H 4850 3600 50  0001 C CNN
+F 4 "RNCP0805FTD1K00CT-ND" V 4850 3600 50  0001 C CNN "Digi-Key Part Number"
+	1    4850 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 3600 4700 3600
+Wire Wire Line
+	5000 3600 5050 3600
+Wire Wire Line
+	6550 4000 6550 4150
+NoConn ~ 5100 3500
+NoConn ~ 5100 3400
+NoConn ~ 5100 2900
+NoConn ~ 5100 3900
+Wire Wire Line
+	5050 3600 5050 3700
+Wire Wire Line
+	5050 3700 4650 3700
+Wire Wire Line
+	5050 3600 5100 3600
+Connection ~ 5050 3600
+NoConn ~ 5100 3700
+Text HLabel 5050 3100 0    50   Input ~ 0
+DIR
+Text HLabel 5050 3200 0    50   Input ~ 0
+STEP
+Text HLabel 4650 3600 0    50   Input ~ 0
+PDN_TX
+Text HLabel 4650 3700 0    50   Input ~ 0
+PDN_RX
+Text HLabel 6600 3000 2    50   Input ~ 0
+EN
+Wire Wire Line
+	6500 3000 6600 3000
+Text HLabel 6600 3200 2    50   Input ~ 0
+OA1
+Wire Wire Line
+	6500 3200 6600 3200
+Wire Wire Line
+	6500 3300 6600 3300
+Text HLabel 6600 3500 2    50   Input ~ 0
+OB2
+Text HLabel 6600 3300 2    50   Input ~ 0
+OA2
+Text HLabel 6600 3400 2    50   Input ~ 0
+OB1
+Wire Wire Line
+	6500 3400 6600 3400
+Wire Wire Line
+	6500 3500 6600 3500
+$EndSCHEMATC

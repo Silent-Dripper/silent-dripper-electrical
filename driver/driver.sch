@@ -1,0 +1,922 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L arduino:Arduino_Uno_Shield XA1
+U 1 1 5FCC16CE
+P 4550 2200
+F 0 "XA1" H 4550 3587 60  0000 C CNN
+F 1 "Arduino_Uno_Shield" H 4550 3481 60  0000 C CNN
+F 2 "Arduino:Arduino_Uno_Shield" H 6350 5950 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-uno-rev3" H 6350 5950 60  0001 C CNN
+	1    4550 2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5900 1550 2    50   Input ~ 0
+TMC_1_EN_PIN
+Text GLabel 5900 1450 2    50   Input ~ 0
+TMC_1_DIR_PIN
+Text GLabel 5900 1350 2    50   Input ~ 0
+TMC_1_STEP_PIN
+Text GLabel 5900 1250 2    50   Input ~ 0
+TMC_1_SW_RX
+Text GLabel 5900 1150 2    50   Input ~ 0
+TMC_1_SW_TX
+Text GLabel 5900 2050 2    50   Input ~ 0
+TMC_2_EN_PIN
+Text GLabel 5900 1950 2    50   Input ~ 0
+TMC_2_DIR_PIN
+Text GLabel 5900 1850 2    50   Input ~ 0
+TMC_2_STEP_PIN
+Text GLabel 5900 1750 2    50   Input ~ 0
+TMC_2_SW_RX
+Text GLabel 5900 1650 2    50   Input ~ 0
+TMC_2_SW_TX
+Wire Wire Line
+	5850 1150 5900 1150
+Wire Wire Line
+	5900 1250 5850 1250
+Wire Wire Line
+	5850 1350 5900 1350
+Wire Wire Line
+	5900 1450 5850 1450
+Wire Wire Line
+	5850 1550 5900 1550
+Wire Wire Line
+	5900 1650 5850 1650
+Wire Wire Line
+	5850 1750 5900 1750
+Wire Wire Line
+	5900 1850 5850 1850
+Wire Wire Line
+	5850 1950 5900 1950
+Wire Wire Line
+	5900 2050 5850 2050
+$Comp
+L Device:R_POT RV1
+U 1 1 600DFF3A
+P 2350 1300
+F 0 "RV1" H 2281 1346 50  0000 R CNN
+F 1 "R_POT" H 2281 1255 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 2350 1300 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/PTV09.pdf" H 2350 1300 50  0001 C CNN
+F 4 "PTV09A-4020U-B103-ND" H 2350 1300 50  0001 C CNN "Digi-Key Part Number"
+	1    2350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 600E1E34
+P 2350 1500
+F 0 "#PWR0101" H 2350 1250 50  0001 C CNN
+F 1 "GND" H 2355 1327 50  0000 C CNN
+F 2 "" H 2350 1500 50  0001 C CNN
+F 3 "" H 2350 1500 50  0001 C CNN
+	1    2350 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1500 2350 1450
+$Comp
+L power:GND #PWR0102
+U 1 1 600E25CB
+P 2350 2350
+F 0 "#PWR0102" H 2350 2100 50  0001 C CNN
+F 1 "GND" H 2355 2177 50  0000 C CNN
+F 2 "" H 2350 2350 50  0001 C CNN
+F 3 "" H 2350 2350 50  0001 C CNN
+	1    2350 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2350 2350 2300
+$Comp
+L power:+5V #PWR0103
+U 1 1 600E2F14
+P 2350 1100
+F 0 "#PWR0103" H 2350 950 50  0001 C CNN
+F 1 "+5V" H 2365 1273 50  0000 C CNN
+F 2 "" H 2350 1100 50  0001 C CNN
+F 3 "" H 2350 1100 50  0001 C CNN
+	1    2350 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 600E3B07
+P 2350 1950
+F 0 "#PWR0104" H 2350 1800 50  0001 C CNN
+F 1 "+5V" H 2365 2123 50  0000 C CNN
+F 2 "" H 2350 1950 50  0001 C CNN
+F 3 "" H 2350 1950 50  0001 C CNN
+	1    2350 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1950 2350 2000
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 601AE820
+P 1500 3350
+F 0 "J3" H 1392 3635 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 1900 3350 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 1500 3350 50  0001 C CNN
+F 3 "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 1500 3350 50  0001 C CNN
+F 4 "455-1705-ND" H 1500 3350 50  0001 C CNN "Digi-Key Part Number"
+	1    1500 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 601AE8A0
+P 2250 3200
+F 0 "#PWR0107" H 2250 3050 50  0001 C CNN
+F 1 "+5V" H 2265 3373 50  0000 C CNN
+F 2 "" H 2250 3200 50  0001 C CNN
+F 3 "" H 2250 3200 50  0001 C CNN
+	1    2250 3200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3200 2250 3250
+Text Notes 1600 2900 0    50   Italic 10
+Heartbeat Sensors
+$Comp
+L Connector:Barrel_Jack J2
+U 1 1 601BF7F5
+P 3900 4700
+F 0 "J2" H 3957 5025 50  0000 C CNN
+F 1 "Barrel_Jack" H 3957 4934 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 3950 4660 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/resource/digikeypdf/pj-102ah.pdf" H 3950 4660 50  0001 C CNN
+F 4 "CP-102AH-ND" H 3900 4700 50  0001 C CNN "Digi-Key Part Number"
+	1    3900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 601C0B89
+P 4300 5300
+F 0 "#PWR0109" H 4300 5050 50  0001 C CNN
+F 1 "GND" H 4305 5127 50  0000 C CNN
+F 2 "" H 4300 5300 50  0001 C CNN
+F 3 "" H 4300 5300 50  0001 C CNN
+	1    4300 5300
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 8400 1750 850  600 
+U 6023FC94
+F0 "TMC_2208_1" 50
+F1 "tmc_circuit.sch" 50
+F2 "DIR" I L 8400 1850 50 
+F3 "STEP" I L 8400 1950 50 
+F4 "PDN_TX" I L 8400 2050 50 
+F5 "PDN_RX" I L 8400 2150 50 
+F6 "EN" I L 8400 2250 50 
+F7 "OA1" I R 9250 1850 50 
+F8 "OB2" I R 9250 2150 50 
+F9 "OA2" I R 9250 1950 50 
+F10 "OB1" I R 9250 2050 50 
+$EndSheet
+$Sheet
+S 8400 2750 850  600 
+U 60256860
+F0 "TMC_2208_2" 50
+F1 "tmc_circuit.sch" 50
+F2 "DIR" I L 8400 2850 50 
+F3 "STEP" I L 8400 2950 50 
+F4 "PDN_TX" I L 8400 3050 50 
+F5 "PDN_RX" I L 8400 3150 50 
+F6 "EN" I L 8400 3250 50 
+F7 "OA1" I R 9250 2850 50 
+F8 "OB2" I R 9250 3150 50 
+F9 "OA2" I R 9250 2950 50 
+F10 "OB1" I R 9250 3050 50 
+$EndSheet
+Text Notes 4700 3800 0    50   Italic 10
+DC Power Inlet
+Text Notes 8400 1600 0    50   Italic 10
+Stepper Motor Drivers\n
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 60263B29
+P 9500 1950
+F 0 "J4" H 9472 1924 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 9472 1833 50  0000 R CNN
+F 2 "" H 9500 1950 50  0001 C CNN
+F 3 "~" H 9500 1950 50  0001 C CNN
+	1    9500 1950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1850 9250 1850
+Wire Wire Line
+	9300 1950 9250 1950
+Wire Wire Line
+	9300 2050 9250 2050
+Wire Wire Line
+	9300 2150 9250 2150
+$Comp
+L Connector:Conn_01x04_Male J5
+U 1 1 60269922
+P 9500 2950
+F 0 "J5" H 9472 2924 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 9472 2833 50  0000 R CNN
+F 2 "" H 9500 2950 50  0001 C CNN
+F 3 "~" H 9500 2950 50  0001 C CNN
+	1    9500 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 2850 9250 2850
+Wire Wire Line
+	9300 2950 9250 2950
+Wire Wire Line
+	9300 3050 9250 3050
+Wire Wire Line
+	9300 3150 9250 3150
+Text GLabel 8350 1850 0    50   Input ~ 0
+TMC_1_DIR_PIN
+Wire Wire Line
+	8350 1850 8400 1850
+Text GLabel 8350 1950 0    50   Input ~ 0
+TMC_1_STEP_PIN
+Wire Wire Line
+	8400 1950 8350 1950
+Text GLabel 8350 2050 0    50   Input ~ 0
+TMC_1_SW_TX
+Wire Wire Line
+	8350 2050 8400 2050
+Text GLabel 8350 2150 0    50   Input ~ 0
+TMC_1_SW_RX
+Wire Wire Line
+	8350 2150 8400 2150
+Text GLabel 8350 2250 0    50   Input ~ 0
+TMC_1_EN_PIN
+Wire Wire Line
+	8350 2250 8400 2250
+Text GLabel 8350 2850 0    50   Input ~ 0
+TMC_2_DIR_PIN
+Wire Wire Line
+	8350 2850 8400 2850
+Text GLabel 8350 2950 0    50   Input ~ 0
+TMC_2_STEP_PIN
+Wire Wire Line
+	8350 2950 8400 2950
+Text GLabel 8350 3050 0    50   Input ~ 0
+TMC_2_SW_TX
+Wire Wire Line
+	8350 3050 8400 3050
+Text GLabel 8350 3150 0    50   Input ~ 0
+TMC_2_SW_RX
+Wire Wire Line
+	8350 3150 8400 3150
+Text GLabel 8350 3250 0    50   Input ~ 0
+TMC_2_EN_PIN
+Wire Wire Line
+	8350 3250 8400 3250
+NoConn ~ 5850 2450
+NoConn ~ 5850 2550
+NoConn ~ 5850 2650
+NoConn ~ 5850 2750
+NoConn ~ 5850 2850
+NoConn ~ 5850 2950
+NoConn ~ 5850 3150
+NoConn ~ 5850 3250
+$Comp
+L Regulator_Linear:NCP1117-1.5_SOT223 U1
+U 1 1 6028E1E1
+P 6850 4400
+F 0 "U1" H 6850 4642 50  0000 C CNN
+F 1 "NCP1117ST50T3G" H 6850 4551 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6850 4600 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 6950 4150 50  0001 C CNN
+F 4 "NCP1117ST50T3GOSTR-ND" H 6850 4400 50  0001 C CNN "Digi-Key Part Number"
+	1    6850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 6029C1B3
+P 5000 4200
+F 0 "#PWR01" H 5000 4050 50  0001 C CNN
+F 1 "+12V" H 5015 4373 50  0000 C CNN
+F 2 "" H 5000 4200 50  0001 C CNN
+F 3 "" H 5000 4200 50  0001 C CNN
+	1    5000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D1
+U 1 1 6029F87A
+P 6050 4400
+F 0 "D1" H 6050 4183 50  0000 C CNN
+F 1 "1N4007" H 6050 4274 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6050 4225 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6050 4400 50  0001 C CNN
+	1    6050 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 4400 6300 4400
+$Comp
+L Device:CP C1
+U 1 1 602B3787
+P 6300 4900
+F 0 "C1" H 6418 4946 50  0000 L CNN
+F 1 "47uF/25V" H 6418 4855 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.8" H 6338 4750 50  0001 C CNN
+F 3 "https://products.nichicon.co.jp/en/pdf/XJA043/e-uwx.pdf" H 6300 4900 50  0001 C CNN
+F 4 "493-14562-1-ND" H 6300 4900 50  0001 C CNN "Digi-Key Part Number"
+	1    6300 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4750 6300 4400
+Connection ~ 6300 4400
+Wire Wire Line
+	7150 4400 7250 4400
+Wire Wire Line
+	7250 4400 7250 4750
+$Comp
+L Device:CP C2
+U 1 1 602BBAA8
+P 7250 4900
+F 0 "C2" H 7368 4946 50  0000 L CNN
+F 1 "47uF/6.3V" H 7368 4855 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.7" H 7288 4750 50  0001 C CNN
+F 3 "http://nichicon-us.com/english/products/pdfs/e-uwj.pdf" H 7250 4900 50  0001 C CNN
+F 4 "493-9781-6-ND" H 7250 4900 50  0001 C CNN "Digi-Key Part Number"
+	1    7250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 602BC92E
+P 6300 5300
+F 0 "#PWR04" H 6300 5050 50  0001 C CNN
+F 1 "GND" H 6305 5127 50  0000 C CNN
+F 2 "" H 6300 5300 50  0001 C CNN
+F 3 "" H 6300 5300 50  0001 C CNN
+	1    6300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 602BF268
+P 7250 5300
+F 0 "#PWR06" H 7250 5050 50  0001 C CNN
+F 1 "GND" H 7255 5127 50  0000 C CNN
+F 2 "" H 7250 5300 50  0001 C CNN
+F 3 "" H 7250 5300 50  0001 C CNN
+	1    7250 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 602C18BA
+P 7900 4900
+F 0 "C3" H 8015 4946 50  0000 L CNN
+F 1 "100nF" H 8015 4855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 7938 4750 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 7900 4900 50  0001 C CNN
+F 4 "1276-1013-1-ND" H 7900 4900 50  0001 C CNN "Digi-Key Part Number"
+	1    7900 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 602C201C
+P 7900 5300
+F 0 "#PWR08" H 7900 5050 50  0001 C CNN
+F 1 "GND" H 7905 5127 50  0000 C CNN
+F 2 "" H 7900 5300 50  0001 C CNN
+F 3 "" H 7900 5300 50  0001 C CNN
+	1    7900 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 4400
+$Comp
+L power:GND #PWR05
+U 1 1 602C56C4
+P 6850 5300
+F 0 "#PWR05" H 6850 5050 50  0001 C CNN
+F 1 "GND" H 6855 5127 50  0000 C CNN
+F 2 "" H 6850 5300 50  0001 C CNN
+F 3 "" H 6850 5300 50  0001 C CNN
+	1    6850 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 602C8676
+P 7900 4200
+F 0 "#PWR07" H 7900 4050 50  0001 C CNN
+F 1 "+5V" H 7915 4373 50  0000 C CNN
+F 2 "" H 7900 4200 50  0001 C CNN
+F 3 "" H 7900 4200 50  0001 C CNN
+	1    7900 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 6450 3800 0    50   Italic 10
+5V Regulator
+Text Notes 1950 750  0    50   Italic 10
+Drop Size Potentiometers
+Text GLabel 3200 1950 0    50   Input ~ 0
+APA_LED_CLK
+Text GLabel 3200 1850 0    50   Input ~ 0
+APA_LED_DATA
+Wire Wire Line
+	2500 2150 3250 2150
+Wire Wire Line
+	2500 1300 2600 1300
+Wire Wire Line
+	2600 1300 2600 2050
+Wire Wire Line
+	2600 2050 3250 2050
+Wire Wire Line
+	2350 1100 2350 1150
+$Comp
+L power:GND #PWR02
+U 1 1 603B77E1
+P 3100 2850
+F 0 "#PWR02" H 3100 2600 50  0001 C CNN
+F 1 "GND" V 3105 2722 50  0000 R CNN
+F 2 "" H 3100 2850 50  0001 C CNN
+F 3 "" H 3100 2850 50  0001 C CNN
+	1    3100 2850
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3150 2850 3250 2850
+Wire Wire Line
+	3250 2750 3150 2750
+Wire Wire Line
+	3150 2750 3150 2850
+Wire Wire Line
+	3150 2850 3100 2850
+Connection ~ 3150 2850
+Wire Wire Line
+	3250 2950 3150 2950
+Wire Wire Line
+	3150 2950 3150 2850
+$Comp
+L power:+5V #PWR03
+U 1 1 603C2B97
+P 3150 3150
+F 0 "#PWR03" H 3150 3000 50  0001 C CNN
+F 1 "+5V" V 3165 3323 50  0000 C CNN
+F 2 "" H 3150 3150 50  0001 C CNN
+F 3 "" H 3150 3150 50  0001 C CNN
+	1    3150 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 3150 3250 3150
+NoConn ~ 3250 3050
+NoConn ~ 3250 3250
+NoConn ~ 3250 1550
+NoConn ~ 3250 1450
+NoConn ~ 3250 1250
+NoConn ~ 3250 1150
+Wire Wire Line
+	2700 2350 3250 2350
+Text Notes 9450 2550 0    50   ~ 0
+TODO: Should these be screw terminals?
+Text Notes 8000 5750 2    50   ~ 0
+Note: Turn on ArduinoPower to power the attached Arduino via the 12V input supply rather than the USB port.
+$Comp
+L LED:APA102 D2
+U 1 1 6046A373
+P 2100 6700
+F 0 "D2" H 2200 7050 50  0000 C CNN
+F 1 "APA102" H 2300 6950 50  0000 C CNN
+F 2 "LED_SMD:LED_RGB_5050-6" H 2150 6400 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201506/APA102%20LED.pdf" H 2200 6325 50  0001 L TNN
+	1    2100 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:APA102 D3
+U 1 1 6048D403
+P 2750 6700
+F 0 "D3" H 2850 7050 50  0000 C CNN
+F 1 "APA102" H 2950 6950 50  0000 C CNN
+F 2 "LED_SMD:LED_RGB_5050-6" H 2800 6400 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201506/APA102%20LED.pdf" H 2850 6325 50  0001 L TNN
+	1    2750 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 6600 2450 6600
+Wire Wire Line
+	2400 6700 2450 6700
+$Comp
+L LED:APA102 D4
+U 1 1 60493AE0
+P 3400 6700
+F 0 "D4" H 3500 7050 50  0000 C CNN
+F 1 "APA102" H 3600 6950 50  0000 C CNN
+F 2 "LED_SMD:LED_RGB_5050-6" H 3450 6400 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201506/APA102%20LED.pdf" H 3500 6325 50  0001 L TNN
+	1    3400 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 6600 3100 6600
+Wire Wire Line
+	3100 6700 3050 6700
+NoConn ~ 3700 6600
+NoConn ~ 3700 6700
+$Comp
+L power:+5V #PWR09
+U 1 1 604A2398
+P 2100 6350
+F 0 "#PWR09" H 2100 6200 50  0001 C CNN
+F 1 "+5V" H 2115 6523 50  0000 C CNN
+F 2 "" H 2100 6350 50  0001 C CNN
+F 3 "" H 2100 6350 50  0001 C CNN
+	1    2100 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 604AB85F
+P 2100 7050
+F 0 "#PWR010" H 2100 6800 50  0001 C CNN
+F 1 "GND" H 2105 6877 50  0000 C CNN
+F 2 "" H 2100 7050 50  0001 C CNN
+F 3 "" H 2100 7050 50  0001 C CNN
+	1    2100 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1850 3250 1850
+Wire Wire Line
+	3250 1950 3200 1950
+Text GLabel 1750 6600 0    50   Input ~ 0
+APA_LED_DATA
+Wire Wire Line
+	1750 6600 1800 6600
+Text GLabel 1750 6700 0    50   Input ~ 0
+APA_LED_CLK
+Wire Wire Line
+	1750 6700 1800 6700
+Text Notes 2550 6050 0    50   Italic 10
+Status LEDs
+NoConn ~ 5850 2150
+NoConn ~ 5850 2250
+NoConn ~ 3250 2450
+NoConn ~ 5700 4600
+Wire Wire Line
+	5900 4400 5700 4400
+Wire Wire Line
+	6300 5050 6300 5300
+Wire Wire Line
+	6850 4700 6850 5300
+Wire Wire Line
+	7250 5050 7250 5300
+Wire Wire Line
+	5000 4200 5000 4500
+Connection ~ 5000 4500
+Wire Wire Line
+	5000 4500 5300 4500
+Wire Wire Line
+	4200 4600 4300 4600
+NoConn ~ 4700 4700
+Wire Wire Line
+	4300 5300 4300 4800
+Wire Wire Line
+	4300 4800 4200 4800
+Wire Wire Line
+	2100 6400 2100 6350
+$Comp
+L power:+5V #PWR011
+U 1 1 605DD373
+P 2750 6350
+F 0 "#PWR011" H 2750 6200 50  0001 C CNN
+F 1 "+5V" H 2765 6523 50  0000 C CNN
+F 2 "" H 2750 6350 50  0001 C CNN
+F 3 "" H 2750 6350 50  0001 C CNN
+	1    2750 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 6350 2750 6400
+$Comp
+L power:+5V #PWR013
+U 1 1 605E030B
+P 3400 6350
+F 0 "#PWR013" H 3400 6200 50  0001 C CNN
+F 1 "+5V" H 3415 6523 50  0000 C CNN
+F 2 "" H 3400 6350 50  0001 C CNN
+F 3 "" H 3400 6350 50  0001 C CNN
+	1    3400 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 6350 3400 6400
+$Comp
+L power:GND #PWR012
+U 1 1 605E493D
+P 2750 7050
+F 0 "#PWR012" H 2750 6800 50  0001 C CNN
+F 1 "GND" H 2755 6877 50  0000 C CNN
+F 2 "" H 2750 7050 50  0001 C CNN
+F 3 "" H 2750 7050 50  0001 C CNN
+	1    2750 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 605E4B89
+P 3400 7050
+F 0 "#PWR014" H 3400 6800 50  0001 C CNN
+F 1 "GND" H 3405 6877 50  0000 C CNN
+F 2 "" H 3400 7050 50  0001 C CNN
+F 3 "" H 3400 7050 50  0001 C CNN
+	1    3400 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 7050 3400 7000
+Wire Wire Line
+	2750 7000 2750 7050
+Wire Wire Line
+	2100 7050 2100 7000
+Wire Wire Line
+	4700 4500 5000 4500
+$Comp
+L Switch:SW_SPDT MotorPower1
+U 1 1 6060713A
+P 4500 4600
+F 0 "MotorPower1" H 4500 4275 50  0000 C CNN
+F 1 "SW_SPDT" H 4500 4366 50  0000 C CNN
+F 2 "E-Switch:500SSP3S1M2QEA" H 4500 4600 50  0001 C CNN
+F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/115/500.pdf" H 4500 4600 50  0001 C CNN
+F 4 "EG5818-ND" H 4500 4600 50  0001 C CNN "Digi-Key Part Number"
+	1    4500 4600
+	1    0    0    1   
+$EndComp
+$Comp
+L Switch:SW_SPDT ArduinoPower1
+U 1 1 60612214
+P 5500 4500
+F 0 "ArduinoPower1" H 5500 4175 50  0000 C CNN
+F 1 "SW_SPDT" H 5500 4266 50  0000 C CNN
+F 2 "E-Switch:500SSP3S1M2QEA" H 5500 4500 50  0001 C CNN
+F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/115/500.pdf" H 5500 4500 50  0001 C CNN
+F 4 "EG5818-ND" H 5500 4500 50  0001 C CNN "Digi-Key Part Number"
+	1    5500 4500
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 606183E8
+P 2350 2150
+F 0 "RV2" H 2281 2196 50  0000 R CNN
+F 1 "R_POT" H 2281 2105 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 2350 2150 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/PTV09.pdf" H 2350 2150 50  0001 C CNN
+F 4 "PTV09A-4020U-B103-ND" H 2350 2150 50  0001 C CNN "Digi-Key Part Number"
+	1    2350 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 6061C310
+P 1500 4500
+F 0 "J1" H 1392 4785 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 1950 4500 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 1500 4500 50  0001 C CNN
+F 3 "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 1500 4500 50  0001 C CNN
+F 4 "455-1705-ND" H 1500 4500 50  0001 C CNN "Digi-Key Part Number"
+	1    1500 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6061FC92
+P 9300 4550
+F 0 "H1" H 9250 4750 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9450 4600 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9300 4550 50  0001 C CNN
+F 3 "~" H 9300 4550 50  0001 C CNN
+	1    9300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 60631A25
+P 9150 5950
+F 0 "#PWR015" H 9150 5700 50  0001 C CNN
+F 1 "GND" H 9155 5777 50  0000 C CNN
+F 2 "" H 9150 5950 50  0001 C CNN
+F 3 "" H 9150 5950 50  0001 C CNN
+	1    9150 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6065F67B
+P 9300 4950
+F 0 "H2" H 9250 5150 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9450 5000 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9300 4950 50  0001 C CNN
+F 3 "~" H 9300 4950 50  0001 C CNN
+	1    9300 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6065FC8B
+P 9300 5350
+F 0 "H3" H 9250 5550 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9450 5400 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9300 5350 50  0001 C CNN
+F 3 "~" H 9300 5350 50  0001 C CNN
+	1    9300 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 606602DA
+P 9300 5750
+F 0 "H4" H 9250 5950 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9450 5800 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9300 5750 50  0001 C CNN
+F 3 "~" H 9300 5750 50  0001 C CNN
+	1    9300 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 5850 9300 5900
+Wire Wire Line
+	9300 5900 9150 5900
+Wire Wire Line
+	9150 5900 9150 5950
+Wire Wire Line
+	9300 5450 9300 5500
+Wire Wire Line
+	9300 5500 9150 5500
+Wire Wire Line
+	9150 5500 9150 5900
+Connection ~ 9150 5900
+Wire Wire Line
+	9300 5050 9300 5100
+Wire Wire Line
+	9300 5100 9150 5100
+Wire Wire Line
+	9150 5100 9150 5500
+Connection ~ 9150 5500
+Wire Wire Line
+	9300 4650 9300 4700
+Wire Wire Line
+	9300 4700 9150 4700
+Wire Wire Line
+	9150 4700 9150 5100
+Connection ~ 9150 5100
+Text Notes 9400 4250 0    50   Italic 10
+Mounting Holes
+$Comp
+L Device:CP C6
+U 1 1 60703A31
+P 2100 3650
+F 0 "C6" H 2218 3696 50  0000 L CNN
+F 1 "47uF/6.3V" H 2218 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.7" H 2138 3500 50  0001 C CNN
+F 3 "http://nichicon-us.com/english/products/pdfs/e-uwj.pdf" H 2100 3650 50  0001 C CNN
+F 4 "493-9781-6-ND" H 2100 3650 50  0001 C CNN "Digi-Key Part Number"
+	1    2100 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3250 2100 3250
+Wire Wire Line
+	2100 3500 2100 3250
+Connection ~ 2100 3250
+Wire Wire Line
+	2100 3250 2250 3250
+$Comp
+L power:GND #PWR0105
+U 1 1 6071F282
+P 2100 3850
+F 0 "#PWR0105" H 2100 3600 50  0001 C CNN
+F 1 "GND" H 2105 3677 50  0000 C CNN
+F 2 "" H 2100 3850 50  0001 C CNN
+F 3 "" H 2100 3850 50  0001 C CNN
+	1    2100 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 6071F6AD
+P 1850 3850
+F 0 "#PWR0106" H 1850 3600 50  0001 C CNN
+F 1 "GND" H 1855 3677 50  0000 C CNN
+F 2 "" H 1850 3850 50  0001 C CNN
+F 3 "" H 1850 3850 50  0001 C CNN
+	1    1850 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3850 1850 3350
+Wire Wire Line
+	1850 3350 1700 3350
+Wire Wire Line
+	2100 3800 2100 3850
+$Comp
+L power:+5V #PWR0108
+U 1 1 6073C240
+P 2250 4350
+F 0 "#PWR0108" H 2250 4200 50  0001 C CNN
+F 1 "+5V" H 2265 4523 50  0000 C CNN
+F 2 "" H 2250 4350 50  0001 C CNN
+F 3 "" H 2250 4350 50  0001 C CNN
+	1    2250 4350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4400 2250 4350
+$Comp
+L Device:CP C7
+U 1 1 60741FA4
+P 2100 4800
+F 0 "C7" H 2218 4846 50  0000 L CNN
+F 1 "47uF/6.3V" H 2218 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.7" H 2138 4650 50  0001 C CNN
+F 3 "http://nichicon-us.com/english/products/pdfs/e-uwj.pdf" H 2100 4800 50  0001 C CNN
+F 4 "493-9781-6-ND" H 2100 4800 50  0001 C CNN "Digi-Key Part Number"
+	1    2100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 6074223E
+P 2100 5000
+F 0 "#PWR0110" H 2100 4750 50  0001 C CNN
+F 1 "GND" H 2105 4827 50  0000 C CNN
+F 2 "" H 2100 5000 50  0001 C CNN
+F 3 "" H 2100 5000 50  0001 C CNN
+	1    2100 5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 60742248
+P 1850 5000
+F 0 "#PWR0111" H 1850 4750 50  0001 C CNN
+F 1 "GND" H 1855 4827 50  0000 C CNN
+F 2 "" H 1850 5000 50  0001 C CNN
+F 3 "" H 1850 5000 50  0001 C CNN
+	1    1850 5000
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2100 4400
+Wire Wire Line
+	2100 4400 2250 4400
+Wire Wire Line
+	1700 4400 2100 4400
+Wire Wire Line
+	1700 4500 1850 4500
+Wire Wire Line
+	1850 4500 1850 5000
+Wire Wire Line
+	2100 5000 2100 4950
+Wire Wire Line
+	2100 4400 2100 4650
+Wire Wire Line
+	1700 3450 2500 3450
+Wire Wire Line
+	2500 2250 3250 2250
+Wire Wire Line
+	2500 2250 2500 3450
+Wire Wire Line
+	2700 2350 2700 4600
+Wire Wire Line
+	2700 4600 1700 4600
+Wire Wire Line
+	7900 4400 7900 4200
+Wire Wire Line
+	7250 4400 7900 4400
+Wire Wire Line
+	7900 4400 7900 4750
+Connection ~ 7900 4400
+Wire Wire Line
+	7900 5050 7900 5300
+Wire Wire Line
+	6300 4400 6550 4400
+$EndSCHEMATC

@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name E-Switch)(type KiCad)(uri ${KIPRJMOD}/external_footprints_symbols/E-Switch/E-Switch.pretty)(options "")(descr ""))
+  (lib (name Arduino)(type KiCad)(uri ${KIPRJMOD}/external_footprints_symbols/arduino-kicad-library-master/Arduino.pretty)(options "")(descr ""))
+  (lib (name TMC2208_SILENTSTEPSTICK)(type KiCad)(uri ${KIPRJMOD}/external_footprints_symbols/TMC2208_SILENTSTEPSTICK)(options "")(descr ""))
+)
