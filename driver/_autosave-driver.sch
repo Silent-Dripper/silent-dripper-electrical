@@ -177,79 +177,79 @@ F 3 "" H 1700 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 8550 950  850  600 
+S 8400 4400 850  600 
 U 6023FC94
 F0 "TMC_2208_1" 50
 F1 "tmc_circuit.sch" 50
-F2 "DIR" I L 8550 1050 50 
-F3 "STEP" I L 8550 1150 50 
-F4 "PDN_TX" I L 8550 1250 50 
-F5 "PDN_RX" I L 8550 1350 50 
-F6 "EN" I L 8550 1450 50 
-F7 "OA1" I R 9400 1050 50 
-F8 "OB2" I R 9400 1350 50 
-F9 "OA2" I R 9400 1150 50 
-F10 "OB1" I R 9400 1250 50 
+F2 "DIR" I L 8400 4500 50 
+F3 "STEP" I L 8400 4600 50 
+F4 "PDN_TX" I L 8400 4700 50 
+F5 "PDN_RX" I L 8400 4800 50 
+F6 "EN" I L 8400 4900 50 
+F7 "OA1" I R 9250 4500 50 
+F8 "OB2" I R 9250 4800 50 
+F9 "OA2" I R 9250 4600 50 
+F10 "OB1" I R 9250 4700 50 
 $EndSheet
 $Sheet
-S 8550 1950 850  600 
+S 8400 5400 850  600 
 U 60256860
 F0 "TMC_2208_2" 50
 F1 "tmc_circuit.sch" 50
-F2 "DIR" I L 8550 2050 50 
-F3 "STEP" I L 8550 2150 50 
-F4 "PDN_TX" I L 8550 2250 50 
-F5 "PDN_RX" I L 8550 2350 50 
-F6 "EN" I L 8550 2450 50 
-F7 "OA1" I R 9400 2050 50 
-F8 "OB2" I R 9400 2350 50 
-F9 "OA2" I R 9400 2150 50 
-F10 "OB1" I R 9400 2250 50 
+F2 "DIR" I L 8400 5500 50 
+F3 "STEP" I L 8400 5600 50 
+F4 "PDN_TX" I L 8400 5700 50 
+F5 "PDN_RX" I L 8400 5800 50 
+F6 "EN" I L 8400 5900 50 
+F7 "OA1" I R 9250 5500 50 
+F8 "OB2" I R 9250 5800 50 
+F9 "OA2" I R 9250 5600 50 
+F10 "OB1" I R 9250 5700 50 
 $EndSheet
 Text Notes 2100 5500 0    50   Italic 10
 DC Power Inlet
-Text Notes 8550 800  0    50   Italic 10
+Text Notes 8400 3950 0    50   Italic 10
 Stepper Motor Drivers\n
-Text GLabel 8500 1050 0    50   Input ~ 0
+Text GLabel 8350 4500 0    50   Input ~ 0
 TMC_1_DIR_PIN
 Wire Wire Line
-	8500 1050 8550 1050
-Text GLabel 8500 1150 0    50   Input ~ 0
+	8350 4500 8400 4500
+Text GLabel 8350 4600 0    50   Input ~ 0
 TMC_1_STEP_PIN
 Wire Wire Line
-	8550 1150 8500 1150
-Text GLabel 8500 1250 0    50   Input ~ 0
+	8400 4600 8350 4600
+Text GLabel 8350 4700 0    50   Input ~ 0
 TMC_1_SW_TX
 Wire Wire Line
-	8500 1250 8550 1250
-Text GLabel 8500 1350 0    50   Input ~ 0
+	8350 4700 8400 4700
+Text GLabel 8350 4800 0    50   Input ~ 0
 TMC_1_SW_RX
 Wire Wire Line
-	8500 1350 8550 1350
-Text GLabel 8500 1450 0    50   Input ~ 0
+	8350 4800 8400 4800
+Text GLabel 8350 4900 0    50   Input ~ 0
 TMC_1_EN_PIN
 Wire Wire Line
-	8500 1450 8550 1450
-Text GLabel 8500 2050 0    50   Input ~ 0
+	8350 4900 8400 4900
+Text GLabel 8350 5500 0    50   Input ~ 0
 TMC_2_DIR_PIN
 Wire Wire Line
-	8500 2050 8550 2050
-Text GLabel 8500 2150 0    50   Input ~ 0
+	8350 5500 8400 5500
+Text GLabel 8350 5600 0    50   Input ~ 0
 TMC_2_STEP_PIN
 Wire Wire Line
-	8500 2150 8550 2150
-Text GLabel 8500 2250 0    50   Input ~ 0
+	8350 5600 8400 5600
+Text GLabel 8350 5700 0    50   Input ~ 0
 TMC_2_SW_TX
 Wire Wire Line
-	8500 2250 8550 2250
-Text GLabel 8500 2350 0    50   Input ~ 0
+	8350 5700 8400 5700
+Text GLabel 8350 5800 0    50   Input ~ 0
 TMC_2_SW_RX
 Wire Wire Line
-	8500 2350 8550 2350
-Text GLabel 8500 2450 0    50   Input ~ 0
+	8350 5800 8400 5800
+Text GLabel 8350 5900 0    50   Input ~ 0
 TMC_2_EN_PIN
 Wire Wire Line
-	8500 2450 8550 2450
+	8350 5900 8400 5900
 NoConn ~ 6500 2450
 NoConn ~ 6500 2550
 NoConn ~ 6500 2650
@@ -286,9 +286,10 @@ L Diode:1N4007 D1
 U 1 1 6029F87A
 P 3450 6100
 F 0 "D1" H 3450 5883 50  0000 C CNN
-F 1 "1N4007" H 3450 5974 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3450 5925 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3450 6100 50  0001 C CNN
+F 1 "S1MB-13-F" H 3450 5974 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB" H 3450 5925 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds16003.pdf" H 3450 6100 50  0001 C CNN
+F 4 "S1MB-FDICT-ND" H 3450 6100 50  0001 C CNN "Digi-Key Part Number"
 	1    3450 6100
 	-1   0    0    1   
 $EndComp
@@ -353,9 +354,9 @@ U 1 1 602C18BA
 P 5300 6600
 F 0 "C5" H 5415 6646 50  0000 L CNN
 F 1 "100nF" H 5415 6555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 5338 6450 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 5300 6600 50  0001 C CNN
-F 4 "1276-1013-1-ND" H 5300 6600 50  0001 C CNN "Digi-Key Part Number"
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5338 6450 50  0001 C CNN
+F 3 "http://datasheets.avx.com/cx5r.pdf" H 5300 6600 50  0001 C CNN
+F 4 "478-08056D104KAT2ACT-ND" H 5300 6600 50  0001 C CNN "Digi-Key Part Number"
 	1    5300 6600
 	1    0    0    -1  
 $EndComp
@@ -661,68 +662,68 @@ $EndComp
 $Comp
 L power:GND #PWR0121
 U 1 1 60631A25
-P 9250 5900
-F 0 "#PWR0121" H 9250 5650 50  0001 C CNN
-F 1 "GND" H 9255 5727 50  0000 C CNN
-F 2 "" H 9250 5900 50  0001 C CNN
-F 3 "" H 9250 5900 50  0001 C CNN
-	1    9250 5900
+P 9150 2750
+F 0 "#PWR0121" H 9150 2500 50  0001 C CNN
+F 1 "GND" H 9155 2577 50  0000 C CNN
+F 2 "" H 9150 2750 50  0001 C CNN
+F 3 "" H 9150 2750 50  0001 C CNN
+	1    9150 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 6065F67B
-P 9400 4900
-F 0 "H2" H 9350 5100 50  0000 L CNN
-F 1 "MountingHole_Pad" H 9550 4950 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9400 4900 50  0001 C CNN
-F 3 "~" H 9400 4900 50  0001 C CNN
-	1    9400 4900
+P 9300 1750
+F 0 "H2" H 9250 1950 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9450 1800 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9300 1750 50  0001 C CNN
+F 3 "~" H 9300 1750 50  0001 C CNN
+	1    9300 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 6065FC8B
-P 9400 5300
-F 0 "H3" H 9350 5500 50  0000 L CNN
-F 1 "MountingHole_Pad" H 9550 5350 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9400 5300 50  0001 C CNN
-F 3 "~" H 9400 5300 50  0001 C CNN
-	1    9400 5300
+P 9300 2150
+F 0 "H3" H 9250 2350 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9450 2200 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9300 2150 50  0001 C CNN
+F 3 "~" H 9300 2150 50  0001 C CNN
+	1    9300 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 606602DA
-P 9400 5700
-F 0 "H4" H 9350 5900 50  0000 L CNN
-F 1 "MountingHole_Pad" H 9550 5750 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9400 5700 50  0001 C CNN
-F 3 "~" H 9400 5700 50  0001 C CNN
-	1    9400 5700
+P 9300 2550
+F 0 "H4" H 9250 2750 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9450 2600 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9300 2550 50  0001 C CNN
+F 3 "~" H 9300 2550 50  0001 C CNN
+	1    9300 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 5800 9400 5850
+	9300 2650 9300 2700
 Wire Wire Line
-	9400 5850 9250 5850
+	9300 2700 9150 2700
 Wire Wire Line
-	9250 5850 9250 5900
+	9150 2700 9150 2750
 Wire Wire Line
-	9400 5400 9400 5450
+	9300 2250 9300 2300
 Wire Wire Line
-	9400 5450 9250 5450
+	9300 2300 9150 2300
 Wire Wire Line
-	9250 5450 9250 5850
-Connection ~ 9250 5850
+	9150 2300 9150 2700
+Connection ~ 9150 2700
 Wire Wire Line
-	9400 5000 9400 5050
+	9300 1850 9300 1900
 Wire Wire Line
-	9400 5050 9250 5050
+	9300 1900 9150 1900
 Wire Wire Line
-	9250 5050 9250 5450
-Connection ~ 9250 5450
-Text Notes 9550 4600 0    50   Italic 10
+	9150 1900 9150 2300
+Connection ~ 9150 2300
+Text Notes 9450 1450 0    50   Italic 10
 Mounting Holes
 $Comp
 L Device:CP C1
@@ -853,25 +854,25 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x04 J1
 U 1 1 60262832
-P 10100 1150
-F 0 "J1" H 10180 1142 50  0000 L CNN
-F 1 "Screw_Terminal_01x04" H 10180 1051 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal" H 10100 1150 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1715747.pdf" H 10100 1150 50  0001 C CNN
-F 4 "277-1265-ND" H 10100 1150 50  0001 C CNN "Digi-Key Part Number"
-	1    10100 1150
+P 9950 4600
+F 0 "J1" H 10030 4592 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 10030 4501 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal" H 9950 4600 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1715747.pdf" H 9950 4600 50  0001 C CNN
+F 4 "277-1265-ND" H 9950 4600 50  0001 C CNN "Digi-Key Part Number"
+	1    9950 4600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x04 J2
 U 1 1 6028289D
-P 10100 2150
-F 0 "J2" H 10180 2142 50  0000 L CNN
-F 1 "Screw_Terminal_01x04" H 10180 2051 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal" H 10100 2150 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1715747.pdf" H 10100 2150 50  0001 C CNN
-F 4 "277-1265-ND" H 10100 2150 50  0001 C CNN "Digi-Key Part Number"
-	1    10100 2150
+P 9950 5600
+F 0 "J2" H 10030 5592 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 10030 5501 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal" H 9950 5600 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1715747.pdf" H 9950 5600 50  0001 C CNN
+F 4 "277-1265-ND" H 9950 5600 50  0001 C CNN "Digi-Key Part Number"
+	1    9950 5600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -885,69 +886,65 @@ Wire Wire Line
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 60315ACB
-P 7650 3500
-F 0 "SW1" H 7650 3175 50  0000 C CNN
-F 1 "SW_SPDT" H 7650 3266 50  0000 C CNN
-F 2 "E-Switch:500SSP3S1M2QEA" H 7650 3500 50  0001 C CNN
-F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/115/500.pdf" H 7650 3500 50  0001 C CNN
-F 4 "EG5818-ND" H 7650 3500 50  0001 C CNN "Digi-Key Part Number"
-	1    7650 3500
-	-1   0    0    1   
+P 7900 2250
+F 0 "SW1" H 7900 1925 50  0000 C CNN
+F 1 "SW_SPDT" H 7900 2016 50  0000 C CNN
+F 2 "E-Switch:500SSP3S1M2QEA" H 7900 2250 50  0001 C CNN
+F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/115/500.pdf" H 7900 2250 50  0001 C CNN
+F 4 "EG5818-ND" H 7900 2250 50  0001 C CNN "Digi-Key Part Number"
+	1    7900 2250
+	-1   0    0    -1  
 $EndComp
-NoConn ~ 7450 3600
+NoConn ~ 7700 2350
 $Comp
 L power:GND #PWR0127
 U 1 1 6033899D
-P 7950 3600
-F 0 "#PWR0127" H 7950 3350 50  0001 C CNN
-F 1 "GND" H 7955 3427 50  0000 C CNN
-F 2 "" H 7950 3600 50  0001 C CNN
-F 3 "" H 7950 3600 50  0001 C CNN
-	1    7950 3600
+P 8200 2350
+F 0 "#PWR0127" H 8200 2100 50  0001 C CNN
+F 1 "GND" H 8205 2177 50  0000 C CNN
+F 2 "" H 8200 2350 50  0001 C CNN
+F 3 "" H 8200 2350 50  0001 C CNN
+	1    8200 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7950 3600 7950 3500
+	8200 2350 8200 2250
 Wire Wire Line
-	7950 3500 7850 3500
-Wire Wire Line
-	6500 2150 6650 2150
-Text Notes 7250 3000 0    50   Italic 10
+	8200 2250 8100 2250
+Text Notes 7500 1750 0    50   Italic 10
 Calibration Mode Switch\n
-Wire Wire Line
-	6650 2150 6650 3400
-Wire Wire Line
-	6650 3400 7450 3400
-Text Label 9550 1050 1    50   ~ 0
+Text Label 9400 4500 1    50   ~ 0
 Motor1_Red
-Text Label 9650 1150 1    50   ~ 0
+Text Label 9500 4600 1    50   ~ 0
 Motor1_White
-Text Label 9750 1250 1    50   ~ 0
+Text Label 9600 4700 1    50   ~ 0
 Motor1_Black
-Text Label 9850 1350 1    50   ~ 0
+Text Label 9700 4800 1    50   ~ 0
 Motor1_Green
 Wire Wire Line
-	9400 1350 9900 1350
+	9250 4800 9750 4800
 Wire Wire Line
-	9400 1250 9900 1250
+	9250 4700 9750 4700
 Wire Wire Line
-	9400 1150 9900 1150
+	9250 4600 9750 4600
 Wire Wire Line
-	9400 1050 9900 1050
+	9250 4500 9750 4500
 Wire Wire Line
-	9400 2050 9900 2050
+	9250 5500 9750 5500
 Wire Wire Line
-	9400 2150 9900 2150
+	9250 5600 9750 5600
 Wire Wire Line
-	9400 2250 9900 2250
+	9250 5700 9750 5700
 Wire Wire Line
-	9400 2350 9900 2350
-Text Label 9550 2050 1    50   ~ 0
+	9250 5800 9750 5800
+Text Label 9400 5500 1    50   ~ 0
 Motor2_Red
-Text Label 9650 2150 1    50   ~ 0
+Text Label 9500 5600 1    50   ~ 0
 Motor2_White
-Text Label 9750 2250 1    50   ~ 0
+Text Label 9600 5700 1    50   ~ 0
 Motor2_Black
-Text Label 9850 2350 1    50   ~ 0
+Text Label 9700 5800 1    50   ~ 0
 Motor2_Green
+Wire Wire Line
+	6500 2150 7700 2150
 $EndSCHEMATC
