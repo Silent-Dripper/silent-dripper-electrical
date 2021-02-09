@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Silent Dripper Driver"
+Date "2021-02-09"
+Rev "1.0.0"
+Comp "www.esologic.com"
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "For support, email dev@esologic.com"
 $EndDescr
 $Comp
 L Device:CP C?
@@ -118,11 +118,8 @@ AR Path="/60256860/602486C9" Ref="U3"  Part="1"
 F 0 "U3" H 5800 4167 50  0000 C CNN
 F 1 "TMC2208_SILENTSTEPSTICK" H 5800 4076 50  0000 C CNN
 F 2 "TMC2208_SILENTSTEPSTICK:MODULE_TMC2208_SILENTSTEPSTICK" H 5800 3300 50  0001 L BNN
-F 3 "" H 5800 3300 50  0001 L BNN
-F 4 "N/A" H 5800 3300 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 5 "v11" H 5800 3300 50  0001 L BNN "PARTREV"
-F 6 "Trinamic" H 5800 3300 50  0001 L BNN "MANUFACTURER"
-F 7 "Manufacturer Recommendations" H 5800 3300 50  0001 L BNN "STANDARD"
+F 3 "https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC220x_TMC2224_datasheet_Rev1.09.pdf" H 5800 3300 50  0001 L BNN
+F 4 "1460-1201-ND" H 5800 3300 50  0001 C CNN "Digi-Key Part Number"
 	1    5800 3300
 	1    0    0    -1  
 $EndComp
