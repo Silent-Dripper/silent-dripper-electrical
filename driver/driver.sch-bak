@@ -471,7 +471,7 @@ F 0 "LED2" H 4950 4750 50  0000 C CNN
 F 1 "APA102" H 5050 4650 50  0000 C CNN
 F 2 "LED_SMD:LED_RGB_5050-6" H 4900 4100 50  0001 L TNN
 F 3 "http://www.led-color.com/upload/201506/APA102%20LED.pdf" H 4950 4025 50  0001 L TNN
-F 4 "2007-BB-HBGR32L-3-TRB-8CT-ND" H 4850 4400 50  0001 C CNN "Digi-key Part Number"
+F 4 "2007-BB-HBGR32L-3-TRB-8CT-ND" H 4850 4400 50  0001 C CNN "Digi-Key Part Number"
 	1    4850 4400
 	1    0    0    -1  
 $EndComp
@@ -950,4 +950,12 @@ Text GLabel 3850 4400 0    50   Input ~ 0
 APA_LED_CLK
 Text GLabel 3850 4300 0    50   Input ~ 0
 APA_LED_DATA
+Text Label 1700 6300 1    50   ~ 0
+Input_Trace_1
+Text Label 2250 6200 1    50   ~ 0
+Input_Trace_2
+Text Label 3200 6100 1    50   ~ 0
+Input_Trace_3
+Text Label 3850 6100 1    50   ~ 0
+Input_Trace_4
 $EndSCHEMATC

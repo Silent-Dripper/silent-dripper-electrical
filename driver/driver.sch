@@ -950,4 +950,12 @@ Text GLabel 3850 4400 0    50   Input ~ 0
 APA_LED_CLK
 Text GLabel 3850 4300 0    50   Input ~ 0
 APA_LED_DATA
+Text Label 1700 6300 1    50   ~ 0
+Input_Trace_1
+Text Label 2250 6200 1    50   ~ 0
+Input_Trace_2
+Text Label 3200 6100 1    50   ~ 0
+Input_Trace_3
+Text Label 3850 6100 1    50   ~ 0
+Input_Trace_4
 $EndSCHEMATC
