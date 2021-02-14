@@ -1,0 +1,17 @@
+** Drc report for /home/devon/Documents/upwork_and_contracting/sara_dittrich/dripper_pcb/driver/driver.kicad_pcb **
+** Created on 2021-02-13 20:04:20 **
+
+** Found 3 DRC errors **
+ErrType(19): Pad too close to pad
+    @(121.995 mm, 125.170 mm): Pad 1 of H3 on All copper layers
+    @(121.995 mm, 125.170 mm): Pad of XA1 on All copper layers
+ErrType(19): Pad too close to pad
+    @(174.065 mm, 92.150 mm): Pad of XA1 on All copper layers
+    @(174.065 mm, 92.150 mm): Pad 1 of H2 on All copper layers
+ErrType(19): Pad too close to pad
+    @(174.065 mm, 120.090 mm): Pad 1 of H4 on All copper layers
+    @(174.065 mm, 120.090 mm): Pad of XA1 on All copper layers
+
+** Found 0 unconnected pads **
+
+** End of Report **

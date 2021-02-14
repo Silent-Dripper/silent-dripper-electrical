@@ -958,4 +958,8 @@ Text Label 3200 6100 1    50   ~ 0
 Input_Trace_3
 Text Label 3850 6100 1    50   ~ 0
 Input_Trace_4
+Text Label 2600 2150 0    50   ~ 0
+Pump_1_Drip_Size
+Text Label 2600 2050 0    50   ~ 0
+Pump_2_Drip_Size
 $EndSCHEMATC
