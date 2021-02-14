@@ -12,6 +12,6 @@ The directory [`./panelized`](./panelized) contains these two boards merged into
 If you're interested in ordering a kit (one driver and two connector PCBs) you can order the:
 
 * Parts from Digi-Key using [bom.csv](./bom.csv).
-* The PCBs from OSHPark [here](https://oshpark.com/shared_projects/27KXLxQq).
+* The PCBs from OSHPark [here]().
 
 This project was completed on commission for the artist [Sara Dittrich](https://www.saradittrich.com/)
