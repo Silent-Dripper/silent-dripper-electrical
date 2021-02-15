@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GerberLayoutSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <LoadedOutlines>
-    <string>D:\vm_shares\pcb_design_box\gerbers\driver-gerbers</string>
     <string>D:\vm_shares\pcb_design_box\gerbers\connector-gerbers</string>
+    <string>D:\vm_shares\pcb_design_box\gerbers\driver-gerbers</string>
   </LoadedOutlines>
   <Instances>
+    <GerberInstance>
+      <Center>
+        <X>6.2782001495361328</X>
+        <Y>112.25</Y>
+      </Center>
+      <Angle>0</Angle>
+      <GerberPath>D:\vm_shares\pcb_design_box\gerbers\connector-gerbers</GerberPath>
+      <Generated>false</Generated>
+    </GerberInstance>
     <GerberInstance>
       <Center>
         <X>-101.7778</X>
@@ -16,17 +25,8 @@
     </GerberInstance>
     <GerberInstance>
       <Center>
-        <X>6.2782001495361328</X>
-        <Y>115.25</Y>
-      </Center>
-      <Angle>0</Angle>
-      <GerberPath>D:\vm_shares\pcb_design_box\gerbers\connector-gerbers</GerberPath>
-      <Generated>false</Generated>
-    </GerberInstance>
-    <GerberInstance>
-      <Center>
-        <X>6.2782001495361328</X>
-        <Y>142.75</Y>
+        <X>6</X>
+        <Y>140</Y>
       </Center>
       <Angle>0</Angle>
       <GerberPath>D:\vm_shares\pcb_design_box\gerbers\connector-gerbers</GerberPath>
@@ -37,43 +37,43 @@
     <BreakTab>
       <Center>
         <X>94</X>
-        <Y>47</Y>
+        <Y>45</Y>
       </Center>
       <Angle>0</Angle>
-      <Radius>3.5</Radius>
+      <Radius>4</Radius>
       <Valid>false</Valid>
     </BreakTab>
     <BreakTab>
       <Center>
         <X>94</X>
-        <Y>36</Y>
+        <Y>35</Y>
       </Center>
       <Angle>0</Angle>
-      <Radius>3.5</Radius>
+      <Radius>4</Radius>
       <Valid>false</Valid>
     </BreakTab>
     <BreakTab>
       <Center>
         <X>94</X>
-        <Y>9</Y>
+        <Y>17</Y>
       </Center>
       <Angle>0</Angle>
-      <Radius>3.5</Radius>
+      <Radius>4</Radius>
       <Valid>false</Valid>
     </BreakTab>
     <BreakTab>
       <Center>
         <X>94</X>
-        <Y>20</Y>
+        <Y>7</Y>
       </Center>
       <Angle>0</Angle>
-      <Radius>3.5</Radius>
+      <Radius>4</Radius>
       <Valid>false</Valid>
     </BreakTab>
     <BreakTab>
       <Center>
         <X>106</X>
-        <Y>29</Y>
+        <Y>26</Y>
       </Center>
       <Angle>0</Angle>
       <Radius>3</Radius>
@@ -88,7 +88,7 @@
   <Smoothing>1</Smoothing>
   <ExtraTabDrillDistance>0</ExtraTabDrillDistance>
   <ClipToOutlines>true</ClipToOutlines>
-  <LastExportFolder>D:\vm_shares\pcb_design_box\gerbers</LastExportFolder>
+  <LastExportFolder>D:\vm_shares\pcb_design_box\gerbers\dripper-gerbers</LastExportFolder>
   <DoNotGenerateMouseBites>false</DoNotGenerateMouseBites>
   <MergeFileTypes>false</MergeFileTypes>
 </GerberLayoutSet>
