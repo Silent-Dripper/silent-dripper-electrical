@@ -1,4 +1,0 @@
-Reference, Quantity, Value, Footprint, Datasheet, Digi-Key Part Number
-H1 H2 H3 H4 ,4,"MountingHole","MountingHole:MountingHole_2.2mm_M2_Pad_Via","~"
-J1 ,1,"Conn_01x04_Female","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
-J2 ,1,"Conn_01x04","Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical","http://www.jst-mfg.com/product/pdf/eng/eXH.pdf","455-2249-ND"

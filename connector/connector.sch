@@ -71,7 +71,7 @@ $EndComp
 Text Label 5650 3700 1    50   ~ 0
 Motor_Phase_A1_Red
 Text Label 5750 3800 1    50   ~ 0
-Motor_Phase_A2_Blue
+Motor_Phase_A2_Blue-White
 Text Label 5850 3900 1    50   ~ 0
 Motor_Phase_B1_Black
 Text Label 5950 4000 1    50   ~ 0

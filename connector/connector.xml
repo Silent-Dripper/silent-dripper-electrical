@@ -2,19 +2,19 @@
 <export version="D">
   <design>
     <source>/home/devon/Documents/upwork_and_contracting/sara_dittrich/dripper_pcb/connector/connector.sch</source>
-    <date>Tue 09 Feb 2021 03:13:30 PM EST</date>
+    <date>Mon 15 Feb 2021 01:41:57 PM EST</date>
     <tool>Eeschema 5.1.9-73d0e3b20d~88~ubuntu18.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
-        <company/>
-        <rev/>
-        <date/>
+        <title>Silent Dripper Connector</title>
+        <company>www.esologic.com</company>
+        <rev>v1.0.0</rev>
+        <date>2021-02-13</date>
         <source>connector.sch</source>
         <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
+        <comment number="2" value="Motor can be soldered directly to pads."/>
+        <comment number="3" value="Note: J1 doesn't have to be populated with a header."/>
+        <comment number="4" value="This board lives inside the dripper and enables connection with the driver."/>
       </title_block>
     </sheet>
   </design>
@@ -134,7 +134,7 @@
       <node ref="J1" pin="1"/>
       <node ref="J2" pin="1"/>
     </net>
-    <net code="2" name="/Motor_Phase_A2_Blue">
+    <net code="2" name="/Motor_Phase_A2_Blue-White">
       <node ref="J1" pin="2"/>
       <node ref="J2" pin="2"/>
     </net>

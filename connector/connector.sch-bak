@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Silent Dripper Connector"
+Date "2021-02-13"
+Rev "v1.0.0"
+Comp "www.esologic.com"
 Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment2 "Motor can be soldered directly to pads."
+Comment3 "Note: J1 doesn't have to be populated with a header."
+Comment4 "This board lives inside the dripper and enables connection with the driver."
 $EndDescr
 $Comp
 L Connector:Conn_01x04_Female J1
