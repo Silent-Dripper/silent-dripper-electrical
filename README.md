@@ -1,5 +1,11 @@
 # Dripper PCB
 
+![](./media/populated-front.jpg)
+
+![](./media/populated-rear.jpg)
+
+![](./media/populated-connector.jpg)
+
 This repo contains the [KiCAD](https://kicad.org/) projects for the two PCBs used in the [silent dripper project](www.esologic.com/silent-dripper).
 
 The two boards are:
