@@ -1,0 +1,104 @@
+
+(rules PCB driver
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 764)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 650.2 (type default_12V))
+    (clear 50.0 (type smd_smd))
+    (clear 650.2 (type smd_12V))
+    (clear 650.2 (type "kicad_default"_12V))
+    (clear 650.2 (type 12V_12V))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-12V" "Via[0-1]_800:400_um" 12V
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    12V "Via[0-1]_800:400_um-12V"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND "APA_LED_DATA" "APA_LED_CLK" +5V "Net-(J3-Pad3)" "Net-(RV1-Pad2)" "Net-(RV2-Pad2)" "TMC_1_EN_PIN"
+    "Net-(U2-PadJP1_7)" "Net-(U2-PadJP1_6)" "Net-(U2-PadJP1_5)" "TMC_1_SW_RX" "Net-(U2-PadJP1_3)" "TMC_1_STEP_PIN" "TMC_1_DIR_PIN" "Net-(U2-PadJP5_1)"
+    "Net-(U2-PadJP4_1)" "Net-(U2-PadJP3_1)" "Net-(U3-PadJP3_1)" "Net-(U3-PadJP4_1)" "Net-(U3-PadJP5_1)" "TMC_2_DIR_PIN" "TMC_2_STEP_PIN" "Net-(U3-PadJP1_3)"
+    "TMC_2_SW_RX" "Net-(U3-PadJP1_5)" "Net-(U3-PadJP1_6)" "Net-(U3-PadJP1_7)" "TMC_2_EN_PIN" "Net-(XA1-PadVIN)" "Net-(XA1-Pad3V3)" "Net-(XA1-PadRST1)"
+    "Net-(XA1-PadIORF)" "Net-(XA1-PadD0)" "Net-(XA1-PadD1)" "TMC_1_SW_TX" "TMC_2_SW_TX" "Net-(XA1-PadSCL)" "Net-(XA1-PadSDA)" "Net-(XA1-PadAREF)"
+    "Net-(XA1-PadD13)" "Net-(J4-Pad3)" "Net-(LED1-Pad5)" "Net-(LED1-Pad6)" "Net-(LED2-Pad6)" "Net-(LED2-Pad5)" "Net-(LED3-Pad5)" "Net-(LED3-Pad6)"
+    "Net-(SW1-Pad1)" "Net-(SW1-Pad3)" "Net-(SW2-Pad1)" "Net-(SW3-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 12V
+    +12V "/Motor1_Green" "/Motor1_Black" "/Motor1_White" "/Motor1_Red" "/Motor2_Red" "/Motor2_White" "/Motor2_Black"
+    "/Motor2_Green" "/Input_Trace_4" "/Input_Trace_3" "/Input_Trace_1"
+    (clearance_class 12V)
+    (via_rule 12V)
+    (rule
+      (width 700.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

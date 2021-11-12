@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name arduino)(type Legacy)(uri ${KIPRJMOD}/external_footprints_symbols/arduino-kicad-library-master/arduino.lib)(options "")(descr ""))
+  (lib (name TMC2208_SILENTSTEPSTICK)(type Legacy)(uri ${KIPRJMOD}/external_footprints_symbols/TMC2208_SILENTSTEPSTICK/TMC2208_SILENTSTEPSTICK.lib)(options "")(descr ""))
+)

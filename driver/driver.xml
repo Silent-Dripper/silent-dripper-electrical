@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/devon/Documents/upwork_and_contracting/sara_dittrich/dripper_pcb/driver/driver.sch</source>
+    <date>Mon 15 Feb 2021 01:40:04 PM EST</date>
+    <tool>Eeschema 5.1.9-73d0e3b20d~88~ubuntu18.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Silent Dripper Driver</title>
+        <company>www.esologic.com</company>
+        <rev>1.0.0</rev>
+        <date>2021-02-09</date>
+        <source>driver.sch</source>
+        <comment number="1" value="For support, email dev@esologic.com, see esologic.com/silent-dripper for project overview."/>
+        <comment number="2" value="Note: Headers for Arduino, and sockets for TMC are not included in schematic."/>
+        <comment number="3" value="Heartbeat sensors can be found here: https://pulsesensor.com/"/>
+        <comment number="4" value="Designed to drive two XP88-ST01 Peristaltic Pumps."/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/TMC_2208_1/" tstamps="/6023FC94/">
+      <title_block>
+        <title>Silent Dripper Driver</title>
+        <company>www.esologic.com</company>
+        <rev>1.0.0</rev>
+        <date>2021-02-09</date>
+        <source>tmc_circuit.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value="For support, email dev@esologic.com"/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/TMC_2208_2/" tstamps="/60256860/">
+      <title_block>
+        <title>Silent Dripper Driver</title>
+        <company>www.esologic.com</company>
+        <rev>1.0.0</rev>
+        <date>2021-02-09</date>
+        <source>tmc_circuit.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value="For support, email dev@esologic.com"/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="XA1">
+      <value>Arduino_Uno_Shield</value>
+      <footprint>Arduino:Arduino_Uno_Shield</footprint>
+      <datasheet>https://store.arduino.cc/arduino-uno-rev3</datasheet>
+      <libsource lib="arduino" part="Arduino_Uno_Shield" description="Shield for Arduino Uno"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FCC16CE</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>R_POT</value>
+      <footprint>Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical</footprint>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/PTV09.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">PTV09A-4020U-B103-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>600DFF3A</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x03_Female</value>
+      <footprint>Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">455-1705-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x03_Female" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>601AE820</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Barrel_Jack</value>
+      <footprint>Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal</footprint>
+      <datasheet>https://www.cuidevices.com/product/resource/digikeypdf/pj-102ah.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">CP-102AH-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Barrel_Jack" description="DC Barrel Jack"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>601BF7F5</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>NCP1117ST50T3G</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">NCP1117ST50T3GOSTR-ND</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="NCP1117-1.5_SOT223" description="1A Low drop-out regulator, Fixed Output 1.5V, SOT-223"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6028E1E1</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>S1MB-13-F</value>
+      <footprint>Diode_SMD:D_SMB</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds16003.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">S1MB-FDICT-ND</field>
+      </fields>
+      <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6029F87A</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>47uF/25V</value>
+      <footprint>Capacitor_SMD:CP_Elec_6.3x5.8</footprint>
+      <datasheet>https://products.nichicon.co.jp/en/pdf/XJA043/e-uwx.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">493-14562-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>602B3787</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>47uF/6.3V</value>
+      <footprint>Capacitor_SMD:CP_Elec_5x5.7</footprint>
+      <datasheet>http://nichicon-us.com/english/products/pdfs/e-uwj.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">493-9781-6-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>602BBAA8</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>http://datasheets.avx.com/cx5r.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">478-08056D104KAT2ACT-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>602C18BA</tstamp>
+    </comp>
+    <comp ref="LED1">
+      <value>APA102</value>
+      <footprint>LED_SMD:LED_RGB_5050-6</footprint>
+      <datasheet>http://www.led-color.com/upload/201506/APA102%20LED.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">2007-BB-HBGR32L-3-TRB-8CT-ND</field>
+      </fields>
+      <libsource lib="LED" part="APA102" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6046A373</tstamp>
+    </comp>
+    <comp ref="LED2">
+      <value>APA102</value>
+      <footprint>LED_SMD:LED_RGB_5050-6</footprint>
+      <datasheet>http://www.led-color.com/upload/201506/APA102%20LED.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">2007-BB-HBGR32L-3-TRB-8CT-ND</field>
+      </fields>
+      <libsource lib="LED" part="APA102" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6048D403</tstamp>
+    </comp>
+    <comp ref="LED3">
+      <value>APA102</value>
+      <footprint>LED_SMD:LED_RGB_5050-6</footprint>
+      <datasheet>http://www.led-color.com/upload/201506/APA102%20LED.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">2007-BB-HBGR32L-3-TRB-8CT-ND</field>
+      </fields>
+      <libsource lib="LED" part="APA102" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60493AE0</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>SW_SPDT</value>
+      <footprint>E-Switch:500SSP3S1M2QEA</footprint>
+      <datasheet>https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/115/500.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">EG5818-ND</field>
+      </fields>
+      <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6060713A</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_SPDT</value>
+      <footprint>E-Switch:500SSP3S1M2QEA</footprint>
+      <datasheet>https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/115/500.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">EG5818-ND</field>
+      </fields>
+      <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60612214</tstamp>
+    </comp>
+    <comp ref="RV2">
+      <value>R_POT</value>
+      <footprint>Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical</footprint>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/PTV09.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">PTV09A-4020U-B103-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>606183E8</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x03_Female</value>
+      <footprint>Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">455-1705-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x03_Female" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6061C310</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6065F67B</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6065FC8B</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>606602DA</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>47uF/6.3V</value>
+      <footprint>Capacitor_SMD:CP_Elec_5x5.7</footprint>
+      <datasheet>http://nichicon-us.com/english/products/pdfs/e-uwj.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">493-9781-6-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60703A31</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>47uF/6.3V</value>
+      <footprint>Capacitor_SMD:CP_Elec_5x5.7</footprint>
+      <datasheet>http://nichicon-us.com/english/products/pdfs/e-uwj.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">493-9781-6-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60741FA4</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Screw_Terminal_01x04</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1715747.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">277-1265-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Screw_Terminal_01x04" description="Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60262832</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Screw_Terminal_01x04</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1715747.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">277-1265-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Screw_Terminal_01x04" description="Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6028289D</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_SPDT</value>
+      <footprint>E-Switch:500SSP3S1M2QEA</footprint>
+      <datasheet>https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/115/500.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">EG5818-ND</field>
+      </fields>
+      <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60315ACB</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>100uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_6.3x5.8</footprint>
+      <datasheet>http://nichicon-us.com/english/products/pdfs/e-uwj.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">493-9777-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>602D161C</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>100uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_6.3x5.8</footprint>
+      <datasheet>http://nichicon-us.com/english/products/pdfs/e-uwj.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">493-9777-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/TMC_2208_1/" tstamps="/6023FC94/"/>
+      <tstamp>6024869C</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>TMC2208_SILENTSTEPSTICK</value>
+      <footprint>TMC2208_SILENTSTEPSTICK:MODULE_TMC2208_SILENTSTEPSTICK</footprint>
+      <datasheet>https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC220x_TMC2224_datasheet_Rev1.09.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">1460-1201-ND</field>
+      </fields>
+      <libsource lib="TMC2208_SILENTSTEPSTICK" part="TMC2208_SILENTSTEPSTICK" description=""/>
+      <sheetpath names="/TMC_2208_1/" tstamps="/6023FC94/"/>
+      <tstamp>602486C9</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://www.seielect.com/catalog/sei-rncp.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">RNCP0805FTD1K00CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TMC_2208_1/" tstamps="/6023FC94/"/>
+      <tstamp>602486D9</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>47uF/6.3V</value>
+      <footprint>Capacitor_SMD:CP_Elec_5x5.7</footprint>
+      <datasheet>http://nichicon-us.com/english/products/pdfs/e-uwj.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">493-9781-6-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/TMC_2208_1/" tstamps="/6023FC94/"/>
+      <tstamp>602C132B</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>100uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_6.3x5.8</footprint>
+      <datasheet>http://nichicon-us.com/english/products/pdfs/e-uwj.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">493-9777-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/TMC_2208_2/" tstamps="/60256860/"/>
+      <tstamp>6024869C</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>TMC2208_SILENTSTEPSTICK</value>
+      <footprint>TMC2208_SILENTSTEPSTICK:MODULE_TMC2208_SILENTSTEPSTICK</footprint>
+      <datasheet>https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC220x_TMC2224_datasheet_Rev1.09.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">1460-1201-ND</field>
+      </fields>
+      <libsource lib="TMC2208_SILENTSTEPSTICK" part="TMC2208_SILENTSTEPSTICK" description=""/>
+      <sheetpath names="/TMC_2208_2/" tstamps="/60256860/"/>
+      <tstamp>602486C9</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://www.seielect.com/catalog/sei-rncp.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">RNCP0805FTD1K00CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TMC_2208_2/" tstamps="/60256860/"/>
+      <tstamp>602486D9</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>47uF/6.3V</value>
+      <footprint>Capacitor_SMD:CP_Elec_5x5.7</footprint>
+      <datasheet>http://nichicon-us.com/english/products/pdfs/e-uwj.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key Part Number">493-9781-6-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/TMC_2208_2/" tstamps="/60256860/"/>
+      <tstamp>602C132B</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Barrel_Jack">
+      <aliases>
+        <alias>Jack-DC</alias>
+      </aliases>
+      <description>DC Barrel Jack</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Barrel_Jack</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Female">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x04">
+      <description>Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_POT">
+      <description>Potentiometer</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="1N4001">
+      <aliases>
+        <alias>1N4002</alias>
+        <alias>1N4003</alias>
+        <alias>1N4004</alias>
+        <alias>1N4005</alias>
+        <alias>1N4006</alias>
+        <alias>1N4007</alias>
+        <alias>BA157</alias>
+        <alias>BA158</alias>
+        <alias>BA159</alias>
+      </aliases>
+      <description>50V 1A General Purpose Rectifier Diode, DO-41</description>
+      <docs>http://www.vishay.com/docs/88503/1n4001.pdf</docs>
+      <footprints>
+        <fp>D*DO?41*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4001</field>
+        <field name="Footprint">Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LED" part="APA102">
+      <description>RGB LED with integrated controller</description>
+      <docs>http://www.led-color.com/upload/201506/APA102%20LED.pdf</docs>
+      <footprints>
+        <fp>LED*RGB*5050*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">APA102</field>
+        <field name="Footprint">LED_SMD:LED_RGB_5050-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DI" type="input"/>
+        <pin num="2" name="CI" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="VCC" type="power_in"/>
+        <pin num="5" name="CO" type="output"/>
+        <pin num="6" name="DO" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="AP1117-15">
+      <aliases>
+        <alias>AP1117-18</alias>
+        <alias>AP1117-25</alias>
+        <alias>AP1117-33</alias>
+        <alias>AP1117-50</alias>
+        <alias>LD1117S33TR_SOT223</alias>
+        <alias>LD1117S12TR_SOT223</alias>
+        <alias>LD1117S18TR_SOT223</alias>
+        <alias>LD1117S25TR_SOT223</alias>
+        <alias>LD1117S50TR_SOT223</alias>
+        <alias>NCP1117-12_SOT223</alias>
+        <alias>NCP1117-1.5_SOT223</alias>
+        <alias>NCP1117-1.8_SOT223</alias>
+        <alias>NCP1117-2.0_SOT223</alias>
+        <alias>NCP1117-2.5_SOT223</alias>
+        <alias>NCP1117-2.85_SOT223</alias>
+        <alias>NCP1117-3.3_SOT223</alias>
+        <alias>NCP1117-5.0_SOT223</alias>
+        <alias>AMS1117-1.5</alias>
+        <alias>AMS1117-1.8</alias>
+        <alias>AMS1117-2.5</alias>
+        <alias>AMS1117-2.85</alias>
+        <alias>AMS1117-3.3</alias>
+        <alias>AMS1117-5.0</alias>
+      </aliases>
+      <description>1A Low Dropout regulator, positive, 1.5V fixed output, SOT-223</description>
+      <docs>http://www.diodes.com/datasheets/AP1117.pdf</docs>
+      <footprints>
+        <fp>SOT?223*TabPin2*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP1117-15</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPDT">
+      <description>Switch, single pole double throw</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPDT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TMC2208_SILENTSTEPSTICK" part="TMC2208_SILENTSTEPSTICK">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TMC2208_SILENTSTEPSTICK</field>
+        <field name="Footprint">MODULE_TMC2208_SILENTSTEPSTICK</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">N/A</field>
+        <field name="PARTREV">v11</field>
+        <field name="MANUFACTURER">Trinamic</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+      </fields>
+      <pins>
+        <pin num="JP1_1" name="DIR" type="input"/>
+        <pin num="JP1_2" name="STEP" type="input"/>
+        <pin num="JP1_3" name="CLK" type="input"/>
+        <pin num="JP1_4" name="PDN/UART1" type="BiDi"/>
+        <pin num="JP1_5" name="PDN/UART2" type="BiDi"/>
+        <pin num="JP1_6" name="MS2" type="input"/>
+        <pin num="JP1_7" name="MS1" type="input"/>
+        <pin num="JP1_8" name="EN" type="input"/>
+        <pin num="JP2_1" name="VM" type="power_in"/>
+        <pin num="JP2_2" name="GND" type="power_in"/>
+        <pin num="JP2_3" name="OA2" type="passive"/>
+        <pin num="JP2_4" name="OA1" type="passive"/>
+        <pin num="JP2_5" name="OB1" type="passive"/>
+        <pin num="JP2_6" name="OB2" type="passive"/>
+        <pin num="JP2_7" name="VIO" type="power_in"/>
+        <pin num="JP2_8" name="GND" type="power_in"/>
+        <pin num="JP3_1" name="DIAG" type="output"/>
+        <pin num="JP4_1" name="INDEX" type="output"/>
+        <pin num="JP5_1" name="VREF" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="arduino" part="Arduino_Uno_Shield">
+      <description>Shield for Arduino Uno</description>
+      <docs>https://store.arduino.cc/arduino-uno-rev3</docs>
+      <footprints>
+        <fp>Arduino_Uno_Shield</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">XA</field>
+        <field name="Value">Arduino_Uno_Shield</field>
+      </fields>
+      <pins>
+        <pin num="3V3" name="3.3V" type="power_in"/>
+        <pin num="5V1" name="5V" type="power_in"/>
+        <pin num="5V2" name="SPI_5V" type="power_in"/>
+        <pin num="A0" name="A0" type="BiDi"/>
+        <pin num="A1" name="A1" type="BiDi"/>
+        <pin num="A2" name="A2" type="BiDi"/>
+        <pin num="A3" name="A3" type="BiDi"/>
+        <pin num="A4" name="A4" type="BiDi"/>
+        <pin num="A5" name="A5" type="BiDi"/>
+        <pin num="AREF" name="AREF" type="input"/>
+        <pin num="D0" name="D0_RX0" type="BiDi"/>
+        <pin num="D1" name="D1_TX0" type="BiDi"/>
+        <pin num="D2" name="D2_INT0" type="BiDi"/>
+        <pin num="D3" name="D3_INT1" type="BiDi"/>
+        <pin num="D4" name="D4" type="BiDi"/>
+        <pin num="D5" name="D5" type="BiDi"/>
+        <pin num="D6" name="D6" type="BiDi"/>
+        <pin num="D7" name="D7" type="BiDi"/>
+        <pin num="D8" name="D8" type="BiDi"/>
+        <pin num="D9" name="D9" type="BiDi"/>
+        <pin num="D10" name="D10_CS" type="BiDi"/>
+        <pin num="D11" name="D11" type="BiDi"/>
+        <pin num="D12" name="D12" type="BiDi"/>
+        <pin num="D13" name="D13" type="BiDi"/>
+        <pin num="GND1" name="GND" type="power_in"/>
+        <pin num="GND2" name="GND" type="power_in"/>
+        <pin num="GND3" name="GND" type="power_in"/>
+        <pin num="GND4" name="SPI_GND" type="power_in"/>
+        <pin num="IORF" name="IOREF" type="output"/>
+        <pin num="MISO" name="SPI_MISO" type="input"/>
+        <pin num="MOSI" name="SPI_MOSI" type="output"/>
+        <pin num="RST1" name="RESET" type="openCol"/>
+        <pin num="RST2" name="SPI_RESET" type="openCol"/>
+        <pin num="SCK" name="SPI_SCK" type="output"/>
+        <pin num="SCL" name="SCL" type="BiDi"/>
+        <pin num="SDA" name="SDA" type="BiDi"/>
+        <pin num="VIN" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>/usr/share/kicad/library/Diode.lib</uri>
+    </library>
+    <library logical="LED">
+      <uri>/usr/share/kicad/library/LED.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad/library/Mechanical.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/usr/share/kicad/library/Regulator_Linear.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad/library/Switch.lib</uri>
+    </library>
+    <library logical="TMC2208_SILENTSTEPSTICK">
+      <uri>/home/devon/Documents/upwork_and_contracting/sara_dittrich/dripper_pcb/driver/external_footprints_symbols/TMC2208_SILENTSTEPSTICK/TMC2208_SILENTSTEPSTICK.lib</uri>
+    </library>
+    <library logical="arduino">
+      <uri>/home/devon/Documents/upwork_and_contracting/sara_dittrich/dripper_pcb/driver/external_footprints_symbols/arduino-kicad-library-master/arduino.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(SW2-Pad1)">
+      <node ref="SW2" pin="1"/>
+    </net>
+    <net code="2" name="/Input_Trace_1">
+      <node ref="J5" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="SW3" pin="2"/>
+    </net>
+    <net code="3" name="Net-(SW3-Pad1)">
+      <node ref="SW3" pin="1"/>
+    </net>
+    <net code="4" name="GND">
+      <node ref="C8" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="U2" pin="JP2_8"/>
+      <node ref="C9" pin="2"/>
+      <node ref="LED1" pin="3"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="XA1" pin="GND3"/>
+      <node ref="XA1" pin="GND2"/>
+      <node ref="XA1" pin="GND1"/>
+      <node ref="U3" pin="JP2_2"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U3" pin="JP2_8"/>
+      <node ref="J5" pin="2"/>
+      <node ref="LED2" pin="3"/>
+      <node ref="LED3" pin="3"/>
+      <node ref="C1" pin="2"/>
+      <node ref="J4" pin="2"/>
+      <node ref="U2" pin="JP2_2"/>
+      <node ref="H3" pin="1"/>
+      <node ref="RV2" pin="3"/>
+      <node ref="C6" pin="2"/>
+      <node ref="H4" pin="1"/>
+      <node ref="H2" pin="1"/>
+    </net>
+    <net code="5" name="Net-(LED2-Pad5)">
+      <node ref="LED2" pin="5"/>
+      <node ref="LED3" pin="2"/>
+    </net>
+    <net code="6" name="+5V">
+      <node ref="C10" pin="1"/>
+      <node ref="RV1" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="XA1" pin="5V1"/>
+      <node ref="J4" pin="1"/>
+      <node ref="LED1" pin="4"/>
+      <node ref="RV2" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="U3" pin="JP2_7"/>
+      <node ref="C2" pin="1"/>
+      <node ref="LED3" pin="4"/>
+      <node ref="LED2" pin="4"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U2" pin="JP2_7"/>
+      <node ref="C9" pin="1"/>
+    </net>
+    <net code="7" name="Net-(LED3-Pad5)">
+      <node ref="LED3" pin="5"/>
+    </net>
+    <net code="8" name="Net-(LED3-Pad6)">
+      <node ref="LED3" pin="6"/>
+    </net>
+    <net code="9" name="Net-(LED2-Pad6)">
+      <node ref="LED2" pin="6"/>
+      <node ref="LED3" pin="1"/>
+    </net>
+    <net code="10" name="Net-(LED1-Pad5)">
+      <node ref="LED1" pin="5"/>
+      <node ref="LED2" pin="2"/>
+    </net>
+    <net code="11" name="Net-(LED1-Pad6)">
+      <node ref="LED1" pin="6"/>
+      <node ref="LED2" pin="1"/>
+    </net>
+    <net code="12" name="Net-(XA1-PadAREF)">
+      <node ref="XA1" pin="AREF"/>
+    </net>
+    <net code="13" name="Net-(XA1-PadD13)">
+      <node ref="XA1" pin="D13"/>
+    </net>
+    <net code="14" name="LED_CLOCK_PIN">
+      <node ref="XA1" pin="A4"/>
+      <node ref="LED1" pin="2"/>
+    </net>
+    <net code="15" name="LED_DATA_PIN">
+      <node ref="LED1" pin="1"/>
+      <node ref="XA1" pin="A5"/>
+    </net>
+    <net code="16" name="Net-(SW1-Pad1)">
+      <node ref="XA1" pin="D12"/>
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="17" name="/Motor2_Green">
+      <node ref="J2" pin="4"/>
+      <node ref="U3" pin="JP2_6"/>
+    </net>
+    <net code="18" name="/Motor2_Black">
+      <node ref="U3" pin="JP2_5"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="19" name="/Motor2_White">
+      <node ref="J2" pin="2"/>
+      <node ref="U3" pin="JP2_3"/>
+    </net>
+    <net code="20" name="/Motor2_Red">
+      <node ref="J2" pin="1"/>
+      <node ref="U3" pin="JP2_4"/>
+    </net>
+    <net code="21" name="/Motor1_Green">
+      <node ref="U2" pin="JP2_6"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="22" name="/Motor1_Black">
+      <node ref="U2" pin="JP2_5"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="23" name="/Motor1_White">
+      <node ref="J1" pin="2"/>
+      <node ref="U2" pin="JP2_3"/>
+    </net>
+    <net code="24" name="/Motor1_Red">
+      <node ref="J1" pin="1"/>
+      <node ref="U2" pin="JP2_4"/>
+    </net>
+    <net code="25" name="/PULSE2_PIN">
+      <node ref="J3" pin="3"/>
+      <node ref="XA1" pin="A1"/>
+    </net>
+    <net code="26" name="/PULSE1_PIN">
+      <node ref="J4" pin="3"/>
+      <node ref="XA1" pin="A0"/>
+    </net>
+    <net code="27" name="Net-(SW1-Pad3)">
+      <node ref="SW1" pin="3"/>
+    </net>
+    <net code="28" name="/PUMP_1_DRIP_SIZE_POT_PIN">
+      <node ref="XA1" pin="A2"/>
+      <node ref="RV2" pin="2"/>
+    </net>
+    <net code="29" name="/Input_Trace_4">
+      <node ref="D1" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="C3" pin="1"/>
+    </net>
+    <net code="30" name="/Input_Trace_3">
+      <node ref="SW2" pin="3"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="31" name="+12V">
+      <node ref="SW2" pin="2"/>
+      <node ref="SW3" pin="3"/>
+      <node ref="U2" pin="JP2_1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U3" pin="JP2_1"/>
+      <node ref="C6" pin="1"/>
+    </net>
+    <net code="32" name="Net-(XA1-PadD0)">
+      <node ref="XA1" pin="D0"/>
+    </net>
+    <net code="33" name="TMC_2_EN_PIN">
+      <node ref="U3" pin="JP1_8"/>
+      <node ref="XA1" pin="D11"/>
+    </net>
+    <net code="34" name="/PUMP_2_DRIP_SIZE_POT_PIN">
+      <node ref="XA1" pin="A3"/>
+      <node ref="RV1" pin="2"/>
+    </net>
+    <net code="35" name="TMC_2_DIR_PIN">
+      <node ref="XA1" pin="D10"/>
+      <node ref="U3" pin="JP1_1"/>
+    </net>
+    <net code="36" name="TMC_2_STEP_PIN">
+      <node ref="XA1" pin="D9"/>
+      <node ref="U3" pin="JP1_2"/>
+    </net>
+    <net code="37" name="TMC_2_SW_RX_PIN">
+      <node ref="XA1" pin="D8"/>
+      <node ref="U3" pin="JP1_4"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="38" name="TMC_2_SW_TX_PIN">
+      <node ref="XA1" pin="D7"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="39" name="TMC_1_EN_PIN">
+      <node ref="XA1" pin="D6"/>
+      <node ref="U2" pin="JP1_8"/>
+    </net>
+    <net code="40" name="TMC_1_DIR_PIN">
+      <node ref="XA1" pin="D5"/>
+      <node ref="U2" pin="JP1_1"/>
+    </net>
+    <net code="41" name="TMC_1_STEP_PIN">
+      <node ref="U2" pin="JP1_2"/>
+      <node ref="XA1" pin="D4"/>
+    </net>
+    <net code="42" name="TMC_1_SW_RX_PIN">
+      <node ref="R1" pin="2"/>
+      <node ref="XA1" pin="D3"/>
+      <node ref="U2" pin="JP1_4"/>
+    </net>
+    <net code="43" name="TMC_1_SW_TX_PIN">
+      <node ref="XA1" pin="D2"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="44" name="Net-(XA1-Pad3V3)">
+      <node ref="XA1" pin="3V3"/>
+    </net>
+    <net code="45" name="Net-(XA1-Pad5V2)">
+      <node ref="XA1" pin="5V2"/>
+    </net>
+    <net code="46" name="Net-(XA1-PadSDA)">
+      <node ref="XA1" pin="SDA"/>
+    </net>
+    <net code="47" name="Net-(XA1-PadD1)">
+      <node ref="XA1" pin="D1"/>
+    </net>
+    <net code="48" name="Net-(XA1-PadIORF)">
+      <node ref="XA1" pin="IORF"/>
+    </net>
+    <net code="49" name="Net-(XA1-PadMISO)">
+      <node ref="XA1" pin="MISO"/>
+    </net>
+    <net code="50" name="Net-(XA1-PadMOSI)">
+      <node ref="XA1" pin="MOSI"/>
+    </net>
+    <net code="51" name="Net-(XA1-PadGND4)">
+      <node ref="XA1" pin="GND4"/>
+    </net>
+    <net code="52" name="Net-(XA1-PadRST2)">
+      <node ref="XA1" pin="RST2"/>
+    </net>
+    <net code="53" name="Net-(XA1-PadRST1)">
+      <node ref="XA1" pin="RST1"/>
+    </net>
+    <net code="54" name="Net-(XA1-PadVIN)">
+      <node ref="XA1" pin="VIN"/>
+    </net>
+    <net code="55" name="Net-(XA1-PadSCL)">
+      <node ref="XA1" pin="SCL"/>
+    </net>
+    <net code="56" name="Net-(XA1-PadSCK)">
+      <node ref="XA1" pin="SCK"/>
+    </net>
+    <net code="57" name="Net-(U2-PadJP1_5)">
+      <node ref="U2" pin="JP1_5"/>
+    </net>
+    <net code="58" name="Net-(U2-PadJP3_1)">
+      <node ref="U2" pin="JP3_1"/>
+    </net>
+    <net code="59" name="Net-(U2-PadJP1_3)">
+      <node ref="U2" pin="JP1_3"/>
+    </net>
+    <net code="60" name="Net-(U2-PadJP5_1)">
+      <node ref="U2" pin="JP5_1"/>
+    </net>
+    <net code="61" name="Net-(U2-PadJP1_7)">
+      <node ref="U2" pin="JP1_7"/>
+    </net>
+    <net code="62" name="Net-(U2-PadJP1_6)">
+      <node ref="U2" pin="JP1_6"/>
+    </net>
+    <net code="63" name="Net-(U2-PadJP4_1)">
+      <node ref="U2" pin="JP4_1"/>
+    </net>
+    <net code="64" name="Net-(U3-PadJP1_5)">
+      <node ref="U3" pin="JP1_5"/>
+    </net>
+    <net code="65" name="Net-(U3-PadJP1_3)">
+      <node ref="U3" pin="JP1_3"/>
+    </net>
+    <net code="66" name="Net-(U3-PadJP5_1)">
+      <node ref="U3" pin="JP5_1"/>
+    </net>
+    <net code="67" name="Net-(U3-PadJP1_7)">
+      <node ref="U3" pin="JP1_7"/>
+    </net>
+    <net code="68" name="Net-(U3-PadJP1_6)">
+      <node ref="U3" pin="JP1_6"/>
+    </net>
+    <net code="69" name="Net-(U3-PadJP3_1)">
+      <node ref="U3" pin="JP3_1"/>
+    </net>
+    <net code="70" name="Net-(U3-PadJP4_1)">
+      <node ref="U3" pin="JP4_1"/>
+    </net>
+  </nets>
+</export>
